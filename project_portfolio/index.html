@@ -10,27 +10,26 @@
 <body>
   <header>
     <nav>
-      <div>
-      <ul class="nav_list">
+      <div class="nav_list">
         <div id="colored_text">
-          <li style="text-decoration: underline;"><span class="colored_text1">P</span>arteek</span></li>
+          <span class="colored_text1">P</span>arteek
         </div>
-        <div id="normal_text">
+
+        <ul id="normal_text">
           <li class="nav_list_items"><a href="#home">Home</a></li>
           <li class="nav_list_items"><a href="#about">About</a></li>
           <li class="nav_list_items"><a href="#services">Services</a></li>
           <li class="nav_list_items"><a href="#projects">Projects</a></li>
           <li class="nav_list_items"><a href="#contact">Contact</a></li>
-        </div>
-      </ul>
+        </ul>  
       </div>
     </nav>
   </header>
 
   <section id="home">
     <img src="my_pic.png" id="pic">
-    <span id="p_small">Web Developer</span>
-    <span id="p_large">Hi, I'm <span class="colored_text2">Parteek Gupta</span><br><span id="p_large2">from India</span></span>
+    <div id="p_small">Web Developer</div>
+    <div id="p_large">Hi, I'm <span class="colored_text2">Parteek Gupta </span><br>from India</div>
   </section>
 
 
@@ -45,7 +44,7 @@
         <br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatum sequi cupiditate non voluptatem ab quis voluptas nihil odio. Hic veniam, sint architecto perspiciatis consequatur quasi error tempora animi alias!
         Eius perspiciatis quis sunt assumenda quisquam pariatur tempore temporibus quidem esse porro. Sapiente officia totam, distinctio blanditiis eius in eveniet dolore dicta pariatur doloribus, eligendi iste reiciendis id! Architecto, obcaecati?
-        <br>
+        <br><br><br>
         <ul class="about_list">
           <li><a class="about_list_skill active">Skills</a></li>
           <li><a class="about_list_education">Education</a></li>
@@ -79,22 +78,25 @@
     <h1>My Services</h1>
 
     <div class="services_content">
-      <div class="box1">
+      <div class="box1 services_box">
         <i class="fa-solid fa-code" ></i>
-        <span>Web Development</span>
+        <br>
+        <div>Web Development</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor tempore eveniet, deserunt harum vero reprehenderit voluptatibus. Unde neque atque, facere et reiciendis pariatur at. Ipsum rerum maiores accusamus ex.</p>
 
       </div>
 
-      <div class="box2">
+      <div class="box2 services_box">
         <i class="fa-solid fa-crop"></i>
-        <span>Basic C++</span>
+        <br>
+        <div>Basic C++</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatum impedit minima nam animi, est dignissimos. At cupiditate eum sed pariatur numquam quo soluta ipsum, illum tempora dolore vitae est.</p>
       </div> 
       
-      <div class="box3">
+      <div class="box3 services_box">
         <i class="fa-solid fa-link"></i>
-        <span>API Integration</span>
+        <br>
+        <div>API Integration</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima assumenda impedit aliquam doloribus officia eos itaque debitis consectetur quis? Eligendi placeat, labore a repellendus totam harum ipsum eius vero quaerat!</p>
       </div>
     </div>
@@ -102,10 +104,9 @@
 
 
   <section id="projects">
-    <h1>My Projects</h1>
-
+    <div> <h1>My Projects</h1></div>
     <div class="projects_content">
-      <div class="projects_box1">
+      <div class="projects_box1 projects_box">
         <img src="box1_img.png">
         <div class="layer">
           <h3>Currency Convertor</h3>
@@ -114,7 +115,7 @@
         </div>
       </div>
 
-      <div class="projects_box2">
+      <div class="projects_box2 projects_box">
         <img src="box2_img.png">
         <div class="layer">
           <h3>Tic-Tac-Toe Game</h3>
@@ -123,7 +124,7 @@
         </div>
       </div>
 
-      <div class="projects_box3">
+      <div class="projects_box3 projects_box">
         <img src="box3_img.png">
         <div class="layer">
           <h3>Amazon Home Page Clone</h3>
@@ -154,6 +155,7 @@
       </div>
       <button>Download CV</button>
     </div>
+
     <div class="contact_form">
       <form action="">
         <input type="text" name="name" id="name" placeholder="Your Name" required>
