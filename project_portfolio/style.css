@@ -4,7 +4,6 @@
 { 
   margin: 0;
   padding: 0;
-  position: relative;
   scroll-behavior: smooth;
   color: white;
   font-family: Arial, sans-serif;
@@ -37,6 +36,7 @@ ul
 
 .nav_list
 {
+  position: relative;
   top: 10px;
   font-weight: bolder;
   display: flex;
@@ -45,14 +45,20 @@ ul
   padding: 0px 200px 0px 150px;
 }
 
+.nav_list_items
+{
+  position: relative;
+}
+
 .nav_list_items::after
 {
+  position: relative;
   content: "";
   background-color: red;
   position: absolute;
   height: 4px;
   width: 0;
-  bottom: -7px;
+  bottom: -4px;
   left: 0;
   transition: 0.1s ease-in-out;
   border-radius: 100px;
@@ -81,13 +87,13 @@ a
 
 #home
 {
- 
   height: 643px;
   width: 100%;
 }
 
 #pic
 {
+  z-index: -1;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -97,25 +103,20 @@ a
 #p_small
 {
   position: relative;
-  top: 25vh;
-  left: 150px; 
+  top: 32vh;
+  padding-left: 150px; 
   font-size: 35px;
 }
 
 #p_large
 {
+  display: inline-block;
+  /* width: 765px; */
   font-weight: bolder;
   position: relative;
   top: 40vh;
-  left: -96px;
+  padding-left: 150px;
   font-size: 70px;
-}
-
-#p_large2
-{
-
-  left: 246px;
-  top: 20px;
 }
 
 .colored_text2
@@ -137,6 +138,7 @@ a
 
 .about_pic
 {
+  position: relative;
   bottom: 10px;
   background-color: #262626;
   border-radius: 20px;
@@ -159,11 +161,12 @@ a
 
 .about_text
 {
-  height: 70vh;
-  width: 50vw;
+  position: relative;
   display: inline-block;
-  left: 210px;
-  bottom: 50px;
+  width: 50%;
+  padding-right: 20px;
+  left: 15%;
+  bottom: 80px;
 }
 
 #about_me
@@ -173,17 +176,18 @@ a
 
 .about_list
 {
+  position: relative;
   font-size: large;
   font-weight: bold;
   padding: 0%;
-  width: 300px;
+  padding-right: 480px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 ul li a
 {
+  position: relative;
   cursor: pointer;
 }
 
@@ -207,7 +211,9 @@ ul li a.active::after
 
 .skill, .experience, .education
 {
- padding: 0%;
+  position: relative;
+  top: 10px;
+  padding: 0%;
 }
 
 ul li span {
@@ -236,6 +242,7 @@ ul li {
 
 #services h1
 {
+  position: relative;
   display: inline-block;
   bottom: 30px;
   left: 150px;
@@ -244,68 +251,60 @@ ul li {
 
 .services_content
 {
+  position: relative;
   display: flex;
   align-items: center;
+  padding-left: 150px;
+  padding-right: 20px;
+  gap: 120px;
   height: 50vh;
 }
 
-.box1
+.services_box
 {
+  position: relative;
   height: 370px;
   width: 370px;
-  left: 150px;
-}
-
-.box2
-{
-  height: 370px;
-  width: 370px;
-  left: 250px;
-}
-
-.box3
-{
-  height: 370px;
-  width: 370px;
-  left: 350px;
-}
-
-#services div div
-{
   background-color: #262626;
   border-radius: 15px; 
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3),
               0 4px 6px rgba(0, 0, 0, 0.2), 
               inset 0 2px 4px rgba(255, 255, 255, 0.1); 
   transition: 0.3s ease-in-out;
+  padding-left: 35px;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: normal;
 }
 
-#services div div i
+.services_box i
 {
+  position: absolute;
   font-size: 50px;
-  left: 30px;
+  /* left: 30px; */
   top: 40px;
 }
 
-#services div div span
+.services_box div
 {
+  position: absolute;
   display: inline-block;
   font-size: 30px;
   font-weight: bold;
-  top: 110px;
-  right: 35px;
+  top: 120px;
+  /* right: 35px; */
   margin: 0;
 }
 
-#services div div p
+.services_box p
 {
+  position: absolute;
   display: inline-block;
-  top: 120px;
-  left: 30px;
-  width: 300px;
+  top: 170px;
+  /* left: 30px; */
 }
 
-#services div div:hover
+.services_box:hover
 {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5),
               0 6px 8px rgba(0, 0, 0, 0.3),
@@ -325,6 +324,7 @@ ul li {
 
 #projects h1
 {
+  position: relative;;
   display: inline-block;
   bottom: 100px;
   left: 150px;
@@ -335,30 +335,10 @@ ul li {
 {
   display: flex;
   align-items: center;
+  padding-left: 150px;
+  gap: 120px;
   height: 50vh;
 }
-
-.projects_box1
-{
-  height: 480px;
-  width: 370px;
-  left: 150px;
-}
-
-.projects_box2
-{
-  height: 480px;
-  width: 370px;
-  left: 250px;
-}
-
-.projects_box3
-{
-  height: 480px;
-  width: 370px;
-  left: 350px;
-}
-
 
 #projects div div img
 {
@@ -367,26 +347,27 @@ ul li {
   border-radius: 15px; 
 }
 
-#projects div div
+.projects_box
 {
+  height: 480px; 
+  width: 370px;
+  position: relative;
   border-radius: 15px;
-  border: solid 1px black;
   object-fit:cover;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3),
               0 4px 6px rgba(0, 0, 0, 0.2), 
               inset 0 2px 4px rgba(255, 255, 255, 0.1); 
   transition: transform 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
   overflow: hidden;
 }
 
-#projects div div:hover .layer
+.projects_box:hover .layer
 {
   height: 100%;
 }
 
 
-#projects div div:hover img
+.projects_box:hover img
 {
   transform: scale(1.1);
 }
@@ -405,8 +386,7 @@ ul li {
   bottom: 0;
   text-align: center;
   overflow: hidden;
-
-
+  transition: height 0.2s ease-in-out;
 }
 
 .layer a i
@@ -432,6 +412,7 @@ ul li {
 
 .social
 {
+  position: relative;
   display: inline-block;
   left: 150px;
   bottom: 30px;
@@ -439,34 +420,40 @@ ul li {
 
 .social h1
 {
+  position: relative;
   font-size: 60px;
   bottom: 100px;
 }
 
 .social p i
 {
+  position: relative;
   color: #ff004f;
 }
 
 .social p span
 {
+  position: relative;
   left: 10px;
 }
 
 .social div a i
 {
+  position: relative;
   color: #a7abac;
   font-size: 30px;
 }
 
 .social div
 {
+  position: relative;
   display: flex;
   gap: 20px;
 }
 
 .social button
 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,6 +469,7 @@ ul li {
 
 .contact_form
 {
+  position: relative;
   display: inline-block;
   left: 300px;
   top: 30px;
@@ -489,6 +477,7 @@ ul li {
 
 .contact_form input
 {
+  position: relative;
   all: unset;
   display: inline-block;
   height: 40px;
@@ -503,6 +492,7 @@ ul li {
 
 .contact_form textarea
 {
+  position: relative;
   all: unset;
   display: inline-block; 
   padding-top: 20px;
@@ -517,6 +507,7 @@ ul li {
 
 .contact_form button
 {
+  position: relative;
   display: inline-block;
   /* top: 50px; */
   /* right: 838px; */
